@@ -1,3 +1,5 @@
+<!-- INSERTAR DATOS EN LA BASE DE DATOS -->
+
 <?php
 
 if(!empty($_POST)){
@@ -16,7 +18,5 @@ if(!empty($_POST)){
 		}
 	}
 }
-
-
 
 ?>

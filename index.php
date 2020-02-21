@@ -6,14 +6,12 @@
     <title> Prueba para a2 Academia | Ing. José A. Pirela </title>
     
     <!-- Bootstrap -->
-    <!-- <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous"> -->
     <link rel="stylesheet" href="assets/plugins/bootstrap-4.3.1/css/bootstrap.min.css">
 
     <!-- Font Awesome -->
     <link rel="stylesheet" href="assets/plugins/font-awesome-5.10.1/css/all.min.css">
 
     <!-- DataTables -->
-    <!-- <link rel="stylesheet" type="text/css" href="https://cdn.datatables.net/v/bs4/dt-1.10.20/datatables.min.css"/> -->
     <link rel="stylesheet" type="text/css" href="assets/plugins/dataTables/datatables.min.css"/>
 
     <!-- DatePicker -->
@@ -84,14 +82,12 @@
        <script src="assets/plugins/jquery/jquery-3.4.1.min.js"></script> 
        
        <!-- Popper -->
-       <!-- <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script> -->
        <script src="assets/plugins/popper/popper.min.js"></script>
 
        <!-- Bootstrap JavaScript -->
        <script src="assets/plugins/bootstrap-4.3.1/js/bootstrap.min.js"></script>
 
        <!-- DataTables JavaScript-->
-       <!-- <script type="text/javascript" src="https://cdn.datatables.net/v/bs4/dt-1.10.20/datatables.min.js"></script> -->
        <script type="text/javascript" src="assets/plugins/dataTables/datatables.min.js"></script> 
 
        <!--Datepicker JavaScript-->

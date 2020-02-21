@@ -1,3 +1,5 @@
+<!-- CONEXIÓN CON LA BASE DE DATOS -->
+
 <?php
 
    $host="localhost";

@@ -6,13 +6,13 @@ $.get("./php/datatable.php","",function(data){
     })
 }   
 $("#buscar").submit(function(e){
-e.preventDefault();
-$.get("./php/busqueda.php",$("#buscar").serialize(),function(data){
-$("#tabla").html(data);
-$("#buscar")[0].reset();
-});
-});
-
+  e.preventDefault();
+  $.get("./php/busqueda.php",$("#buscar").serialize(),function(data){
+  $("#tabla").html(data);
+  $("#buscar")[0].reset();
+  });
+  });
+  
 loadTabla();
 
 $("#agregar").submit(function(e){

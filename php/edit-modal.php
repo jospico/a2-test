@@ -1,3 +1,5 @@
+<!-- FORMULARIO DEL MODAL PARA EDITAR REGISTROS -->
+
 <?php
 include "../config/conexion-bd.php";
 
@@ -48,6 +50,7 @@ while ($r=$query->fetch_object()){
   </div>
 </form>
 
+<!-- ======================================== JAVASCRIPT =========================================== -->
 <script>
     $("#actualizar").submit(function(e){
     e.preventDefault();
@@ -67,7 +70,8 @@ while ($r=$query->fetch_object()){
   format: 'dd/mm/yyyy'
 });
 </script>
+<!-- ================================================================================================= -->
 
 <?php else:?>
-  <p class="alert alert-danger">404 No se encuentra</p>
+  <p class="alert alert-danger">¡ERROR! Datos No Encontrados.</p>
 <?php endif;?>

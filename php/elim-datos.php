@@ -1,3 +1,5 @@
+<!-- ELIMINAR REGISTROS DE LA BASE DE DATOS -->
+
 <?php
 
 if(!empty($_GET)){
@@ -6,9 +8,9 @@ if(!empty($_GET)){
 			$sql = "DELETE FROM datospersonales WHERE id=".$_GET["id"];
 			$query = $con->query($sql);
 			if($query!=null){
-				print "<script>alert(\"Eliminado exitosamente.\");window.location='../ver.php';</script>";
+				print "<script>alert(\"Eliminado exitosamente.\");window.location='../index.php';</script>";
 			}else{
-				print "<script>alert(\"No se pudo eliminar.\");window.location='../ver.php';</script>";
+				print "<script>alert(\"No se pudo eliminar.\");window.location='../index.php';</script>";
 
 			}
 }

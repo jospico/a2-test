@@ -10,7 +10,7 @@
              <h4 class="text-center pt-4">ING. JOSÉ A. PIRELA</h4>
              <p class="text-muted text-center mb-4 mt-0">Ingeniero en Computación</p>
 
-             <img class="float-right img-personal" src="assets/img/img-japc.jpg" alt="Ing. José Pirela">
+             <img class="float-right rounded-circle img-personal" src="assets/img/img-japc.jpg" alt="Ing. José Pirela">
              <h5 class="px-3 pb-3 mb-4 border-bottom"> <i class="fas fa-user"></i> DATOS PERSONALES </h5>
              <div class="px-3" style="margin-top:20px;">
                  <h6> <i class="fas fa-address-card icons-personal"></i> V-19.765.877 </h6>

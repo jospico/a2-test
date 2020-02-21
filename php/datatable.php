@@ -1,3 +1,5 @@
+<!-- TABLA PARA VISUALIZATR LOS REGISTROS -->
+
 <?php
 
 include "../config/conexion-bd.php";
@@ -21,12 +23,12 @@ $query = $con->query($sql1);
 	<td><?php echo $r["apellido"]; ?></td>
 	<td><?php echo $r["fecha"]; ?></td>
 		<td style="width:150px;">
-		<a data-id="<?php echo $r["id"];?>" class="btn btn-edit btn-sm btn-warning" data-toggle="tooltip" data-placement="bottom" title="Editar Registro"><i class="fas fa-edit"></i></a>
-		<a href="#" id="del-<?php echo $r["id"];?>" class="btn btn-sm btn-danger" data-toggle="tooltip" data-placement="bottom" title="Eliminar Registro"><i class="fas fa-trash"></i></a>
+		<a data-id="<?php echo $r["id"];?>" class="btn btn-edit btn-sm btn-warning" title="Editar Registro"><i class="fas fa-edit"></i></a>
+		<a href="#" id="del-<?php echo $r["id"];?>" class="btn btn-sm btn-danger" title="Eliminar Registro"><i class="fas fa-trash"></i></a>
 		<script>
 		$("#del-"+<?php echo $r["id"];?>).click(function(e){
 			e.preventDefault();
-			p = confirm("Estas seguro?");
+			p = confirm("¿Está seguro de eliminar este registro?");
 			if(p){
 				$.get("./php/elim-datos.php","id="+<?php echo $r["id"];?>,function(data){
 					loadTabla();
@@ -40,9 +42,11 @@ $query = $con->query($sql1);
 <?php endwhile;?>
 </table>
 <?php else:?>
-	<p class="alert alert-warning">No hay resultados</p>
+	<h5 class="alert alert-warning"><i class="fas fa-exclamation-circle"></i> No se encuentran registros en la base de datos. </h5>
 <?php endif;?>
-  <!-- Modal -->
+
+  <!-- ESTRUCTURA BÁSICA DEL MODAL PARA EDITAR REGISTROS -->
+  
   <script>
   	$(".btn-edit").click(function(){
   		id = $(this).data("id");
@@ -52,6 +56,7 @@ $query = $con->query($sql1);
   		$('#editModal').modal('show');
   	});
   </script>
+
   <div class="modal fade" id="editModal" tabindex="-1" role="dialog" aria-labelledby="editModalLabel" aria-hidden="true">
     <div class="modal-dialog modal-lg">
       <div class="modal-content">
