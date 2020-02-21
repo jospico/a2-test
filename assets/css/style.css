@@ -1,0 +1,56 @@
+body {
+    padding-top: 3.5rem;
+}
+
+html, body {
+  height: 100%;
+}
+.wrapper {
+  min-height: 100%;
+  height: auto !important;
+  height: 100%;
+  margin: 0 auto -100px; /* the bottom margin is the negative value of the footer's height */
+}
+.push {
+  height: 110px; /* .push must be the same height as .footer */
+}
+
+.footer{
+  height: 110px;
+  background-color: gray;
+  color: white;
+  margin-top: 20px;
+}
+
+.bd-placeholder-img {
+    font-size: 1.125rem;
+    text-anchor: middle;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+
+@media (min-width: 768px) {
+    .bd-placeholder-img-lg {
+      font-size: 3.5rem;
+    }
+}
+
+.jumbotron {
+  background: url("../img/img-cover.jpg") no-repeat no-repeat;
+  background-size: cover;
+}
+
+.img-personal{
+  width:180px; 
+  margin-right:50px;
+  margin-top:100px;
+}
+
+.icons-personal{
+  font-size:22px; 
+  margin-right:5px;
+  margin-bottom: 8px;
+}
+
